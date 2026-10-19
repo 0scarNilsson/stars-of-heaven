@@ -1,18 +1,22 @@
 p {
     font-family: arial;
+    background-color: rgb(253, 253, 253);
+    font-weight: bold;
 }
 
 body {
     background-color: rgb(226, 220, 216);
 }
 
+h1 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.main-info {
-    
 }
 
 .group-logo {
@@ -50,13 +54,17 @@ body {
 
 .about-us {
     border: none;
-    width: 200px;
-    height: 50px;
     background-color: black;
-    color: white;
-    font-weight: bold;;
+    color:white;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .our-songs:hover {
@@ -73,4 +81,65 @@ body {
 
 .about-us:active {
     opacity: 0.4;
+}
+
+
+/*
+    Songs CSS
+*/
+.album-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.albums {
+    width: 300px;
+}
+
+.album-songs {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 40px;
+}
+
+td,th {
+    border: solid black;
+    padding-right: 300px;
+    font-weight: bold;
+}
+
+th {
+    color: red;
+    background-color: black;
+}
+
+/*
+    Album CSS
+*/
+
+.members {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.band-pictures {
+    display: grid;
+}
+.pictures {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.members-table {
+
+}
+
+.td-pid {
+    padding-bottom: 200px;
+}
+
+.pictures-table {
+    height: 100%;
 }
